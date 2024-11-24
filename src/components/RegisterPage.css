@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #3a7bd5, #3a6073);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  /* Logo Header */
+  .logo-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .logo-image {
+    width: 120px;
+    height: auto;
+  }
+  
+  /* Register Page Styles */
+  .register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #1c1e26);
+  }
+  
+  /* Register Card */
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .register-card {
+    background: #2c2f33;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .register-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ccc;
+  }
+  
+  form input,
+  form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #3a3d41;
+    border-radius: 5px;
+    background: #23272a;
+    color: #fff;
+  }
+  
+  form input:focus,
+  form select:focus {
+    outline: none;
+    border-color: #7289da;
+  }
+  
+  .dob-inputs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-container label {
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  .register-button {
+    background: #5865f2;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .register-button:hover {
+    background: #4752c4;
+  }
+  
+  .terms {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+    color: #ccc;
+  }
+  
+  .terms a {
+    color: #7289da;
+    text-decoration: none;
+  }
+  
+  /* .terms a:hover {
+    text-decoration: underline;
+  } */
+  
+  .login-link {
+    font-size: 14px;
+    color: #7289da;
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+  }
+  
+  /* .login-link:hover {
+    text-decoration: underline;
+  } */
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .register-card {
+      padding: 20px;
+      margin: 10px;
+    }
+  
+    .logo-image {
+      width: 100px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .login-card {
+      padding: 15px;
+    }
+  
+    .login-title {
+      font-size: 1.2rem;
+    }
+  
+    .login-subtitle {
+      font-size: 0.9rem;
+    }
+  
+    input, .login-button {
+      font-size: 0.9rem;
+    }
+  
+    .login-options {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo-image {
+      width: 80px; /* Smaller logo for smaller screens */
+    }
+  
+    .login-card {
+      padding: 10px;
+    }
+  
+    .login-title {
+      font-size: 1rem;
+    }
+  
+    .login-subtitle {
+      font-size: 0.8rem;
+    }
+  
+    input, .login-button {
+      font-size: 0.8rem;
+      padding: 8px;
+    }
+  
+    .login-options {
+      font-size: 0.7rem;
+    }
+  }
