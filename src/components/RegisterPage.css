@@ -147,6 +147,14 @@ body {
     padding: 10px 0; /* Adjusted for smaller devices */
     background: linear-gradient(135deg, #5865f2, #23272a); /* Softer gradient for mobile */
   }
+  .logo {
+    position: relative;
+    top: 10px;
+    margin-bottom: 15px;
+    width: 120px;
+    height: auto;
+  }
+
   .register-container {
     max-width: 320px; 
     margin-top: 40px;

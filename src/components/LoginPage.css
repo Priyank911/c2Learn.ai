@@ -122,6 +122,13 @@ body {
   body {
     padding: 0;
   }
+  .logo {
+    position: relative;
+    top: 10px;
+    margin-bottom: 15px;
+    width: 120px;
+    height: auto;
+  }
 
   .login-options {
     gap: 6px; /* Reduce gap for smaller devices */
