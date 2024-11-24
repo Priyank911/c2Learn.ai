@@ -147,20 +147,11 @@ body {
     padding: 10px 0; /* Adjusted for smaller devices */
     background: linear-gradient(135deg, #5865f2, #23272a); /* Softer gradient for mobile */
   }
-  .logo {
-    position: relative;
-    top: 10px; /* Slightly adjust the top positioning */
-    margin-bottom: 15px; /* Add some space below the logo */
-    width: 120px; /* Resize the logo for smaller screens if necessary */
-    height: auto;
-  }
-
-  /* Register Card */
-  .register-card {
-    margin-top: 40px; /* Add more space between the logo and the card */
-    padding: 20px; /* Adjust padding to fit smaller screens */
-    width: 90%; /* Make the card responsive */
-    max-width: 320px;
+  .register-container {
+    max-width: 320px; 
+    margin-top: 40px;
+    padding: 20px 10px;
+    margin: 10px auto; 
   }
 
   .register-title {
