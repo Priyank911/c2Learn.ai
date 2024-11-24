@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./RegisterPage.css";
 import logo from "../assets/C2learn ai.png"; 
+
 const RegisterPage = () => {
+  const [days, setDays] = useState([]);
+  const [years, setYears] = useState([]);
+  
+  // Generate days (1 to 31)
+  useEffect(() => {
+    const dayOptions = [];
+    for (let day = 1; day <= 31; day++) {
+      dayOptions.push(day);
+    }
+    setDays(dayOptions);
+
+    // Generate years (from current year down to 1990)
+    const currentYear = new Date().getFullYear();
+    const yearOptions = [];
+    for (let year = currentYear; year >= 1990; year--) {
+      yearOptions.push(year);
+    }
+    setYears(yearOptions);
+  }, []);
+
   return (
     <div className="register-page">
       <div className="logo-header">
@@ -36,18 +57,37 @@ const RegisterPage = () => {
             />
             <label>Date of Birth *</label>
             <div className="dob-inputs">
+              {/* Month dropdown (static) */}
               <select required>
                 <option value="">Month</option>
                 <option value="January">January</option>
-                {/* Add other months */}
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
               </select>
+
+              {/* Day dropdown (dynamic) */}
               <select required>
                 <option value="">Day</option>
-                {/* Add days */}
+                {days.map((day) => (
+                  <option key={day} value={day}>{day}</option>
+                ))}
               </select>
+
+              {/* Year dropdown (dynamic) */}
               <select required>
                 <option value="">Year</option>
-                {/* Add years */}
+                {years.map((year) => (
+                  <option key={year} value={year}>{year}</option>
+                ))}
               </select>
             </div>
             <div className="checkbox-container">

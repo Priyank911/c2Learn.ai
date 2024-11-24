@@ -142,63 +142,39 @@ body {
     text-decoration: underline;
   } */
   
-  /* Mobile Responsive */
-  @media (max-width: 768px) {
-    .register-card {
-      padding: 20px;
-      margin: 10px;
-    }
-  
-    .logo-image {
-      width: 100px;
-    }
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px 0; /* Adjusted for smaller devices */
+    background: linear-gradient(135deg, #5865f2, #23272a); /* Softer gradient for mobile */
   }
-  
-  @media (max-width: 768px) {
-    .login-card {
-      padding: 15px;
-    }
-  
-    .login-title {
-      font-size: 1.2rem;
-    }
-  
-    .login-subtitle {
-      font-size: 0.9rem;
-    }
-  
-    input, .login-button {
-      font-size: 0.9rem;
-    }
-  
-    .login-options {
-      font-size: 0.8rem;
-    }
+
+  .register-container {
+    max-width: 320px; /* Compact width for mobile */
+    padding: 20px 10px;
+    margin: 10px auto; /* Adjusted margin for small screens */
   }
-  
-  @media (max-width: 480px) {
-    .logo-image {
-      width: 80px; /* Smaller logo for smaller screens */
-    }
-  
-    .login-card {
-      padding: 10px;
-    }
-  
-    .login-title {
-      font-size: 1rem;
-    }
-  
-    .login-subtitle {
-      font-size: 0.8rem;
-    }
-  
-    input, .login-button {
-      font-size: 0.8rem;
-      padding: 8px;
-    }
-  
-    .login-options {
-      font-size: 0.7rem;
-    }
+
+  .register-title {
+    font-size: 20px; /* Slightly smaller title */
   }
+
+  form input,
+  form select {
+    font-size: 13px; /* Compact font size */
+    padding: 8px 10px; /* Smaller padding for inputs */
+  }
+
+  .register-button {
+    padding: 10px;
+    font-size: 14px; /* Compact button for mobile */
+  }
+
+  .terms {
+    font-size: 11px; /* Smaller font for terms */
+  }
+
+  .checkbox-container {
+    font-size: 12px;
+  }
+}
