@@ -38,11 +38,11 @@ const RegisterPage = () => {
               placeholder="Enter your email"
               required
             />
-            <label>Display Name</label>
+            {/* <label>Display Name</label>
             <input
               type="text"
               placeholder="Enter your display name"
-            />
+            /> */}
             <label>Username *</label>
             <input
               type="text"
