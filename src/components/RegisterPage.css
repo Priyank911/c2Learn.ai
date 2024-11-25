@@ -1,16 +1,16 @@
-/* General Styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #3b6b40, #1e2f24); 
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-  }
-  
-
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background:url("bg.svg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #e0f2e0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   .logo-header {
     position: absolute;
     top: 20px;
@@ -138,12 +138,15 @@ body {
     margin-top: 15px;
     text-decoration: none;
   }
+
+  
   
 @media (max-width: 768px) {
   body {
     padding: 10px 0;
-    background: linear-gradient(135deg, #3b6b40, #1e2f24);
+    background:url("bg.svg"); 
   }
+
   .logo {
     position: relative;
     top: 0;
