@@ -114,7 +114,7 @@ form input:focus {
 /* Responsive Design */
 @media (max-width: 768px) {
   body {
-    padding: 0;
+    padding:0;
     background: linear-gradient(135deg, #3b6b40, #1e2f24);
   }
 
@@ -160,5 +160,86 @@ form input:focus {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Tree SVG Styling */
+.login-container::before,
+.login-container::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 450px; 
+  background-image: url('tree.png'); 
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  /* animation: sway 5s infinite alternate ease-in-out; */
+  z-index: 1; /* Positioned behind the card */
+  opacity: 1; /* Fully visible for desktop */
+  pointer-events: none; /* Ensure it doesn't block interactions */
+}
+
+.login-container::before {
+  left: -150px; 
+  transform: rotateY(180deg); 
+}
+
+.login-container::after {
+  right: -150px; 
+}
+
+.giraffe {
+  position: fixed; /* Keeps the panda fixed on the page */
+  bottom: 20px; /* Aligns near the bottom */
+  right: 20px; /* Aligns to the right */
+  width: 150px; /* Sets the panda's width */
+  height: 150px; /* Ensures proper aspect ratio */
+  background-image: url('Panda.png'); /* Ensure the path is relative to your CSS file */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  background-size: contain; /* Scales the image proportionally */
+  background-position: center; /* Centers the panda */
+  z-index: 10; /* Ensures it appears above other elements */
+  animation: pandaFloat 3s infinite ease-in-out; /* Adds a subtle floating animation */
+}
+
+/* Animation for the Panda */
+@keyframes pandaFloat {
+  0%, 100% {
+    transform: translateY(0); /* Initial position */
+  }
+  50% {
+    transform: translateY(-10px); /* Slight upward movement */
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container::before,
+  .login-container::after {
+    width: 300px;  
+    opacity: 0.4; /* Make trees semi-transparent */
+    z-index: 0; /* Move trees further back */
+  }
+  .giraffe {
+    width: 100px; /* Smaller giraffe for mobile */
+    right: 10px; /* Adjust position for smaller screens */
+  }
+  .login-container::before {
+    left: -150px;
+  }
+
+  .login-container::after {
+    right: -150px;
+  }
+}
+
+/* Tree Sway Animation */
+@keyframes sway {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(10px) rotate(2deg);
   }
 }
