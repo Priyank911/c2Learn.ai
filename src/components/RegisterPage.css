@@ -156,7 +156,9 @@ body {
     width: 120px;
     height: auto;
   }
-
+  .register-card {
+    margin-top: 80px;
+}
   .register-container {
     max-width: 320px;
     margin-top: 50px;
