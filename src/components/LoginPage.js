@@ -6,8 +6,11 @@ const LoginPage = () => {
   return (
     <div className="login-page">
       <div className="logo-header">
-        <img src={logo} alt="C2Learn.ai Logo" className="logo-image" />
-      </div>
+  <a href="/login">
+    <img src={logo} alt="C2Learn.ai Logo" className="logo-image" />
+  </a>
+</div>
+
 
       <div className="login-container">
         <div className="login-card">

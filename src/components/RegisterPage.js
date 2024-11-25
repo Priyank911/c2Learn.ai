@@ -25,9 +25,12 @@ const RegisterPage = () => {
 
   return (
     <div className="register-page">
-      <div className="logo-header">
-        <img src={logo} alt="C2Learn.ai Logo" className="logo-image" />
-      </div>
+     <div className="logo-header">
+  <a href="/login">
+    <img src={logo} alt="C2Learn.ai Logo" className="logo-image" />
+  </a>
+</div>
+
       <div className="register-container">
         <div className="register-card">
           <h2 className="register-title">Create an account</h2>
