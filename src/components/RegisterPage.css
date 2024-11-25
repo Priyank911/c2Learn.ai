@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #3a7bd5, #3a6073);
+    background: linear-gradient(135deg, #3b6b40, #1e2f24); 
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@ body {
     color: #fff;
   }
   
-  /* Logo Header */
+
   .logo-header {
     position: absolute;
     top: 20px;
@@ -21,8 +21,7 @@ body {
     width: 120px;
     height: auto;
   }
-  
-  /* Register Page Styles */
+
   .register-page {
     display: flex;
     justify-content: center;
@@ -41,7 +40,7 @@ body {
   }
   
   .register-card {
-    background: #2c2f33;
+    background: #2a3c34;
     padding: 10px 20px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -70,7 +69,8 @@ body {
   form select {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #3a3d41;
+    background-color: #1e2f24;
+    border: 1px solid #345b3a;
     border-radius: 5px;
     background: #23272a;
     color: #fff;
@@ -79,8 +79,9 @@ body {
   form input:focus,
   form select:focus {
     outline: none;
-    border-color: #7289da;
+    border-color: #4a7f54;
   }
+
   
   .dob-inputs {
     display: flex;
@@ -99,7 +100,7 @@ body {
   }
   
   .register-button {
-    background: #5865f2;
+    background: #4a7f54;
     color: #fff;
     padding: 10px;
     border: none;
@@ -109,7 +110,7 @@ body {
   }
   
   .register-button:hover {
-    background: #4752c4;
+    background: #3a6b40;
   }
   
   .terms {
@@ -120,7 +121,7 @@ body {
   }
   
   .terms a {
-    color: #7289da;
+    color: #72a883;
     text-decoration: none;
   }
   
@@ -130,7 +131,7 @@ body {
   
   .login-link {
     font-size: 14px;
-    color: #7289da;
+    color: #b9d4b9;
     text-align: center;
     display: block;
     margin-top: 15px;
@@ -145,7 +146,7 @@ body {
 @media (max-width: 768px) {
   body {
     padding: 10px 0; /* Adjusted for smaller devices */
-    background: linear-gradient(135deg, #5865f2, #23272a); /* Softer gradient for mobile */
+    background: linear-gradient(135deg, #3b6b40, #1e2f24);
   }
   .logo {
     position: relative;
