@@ -1,17 +1,19 @@
 import React from "react";
 import "./LoginPage.css";
 import logo from "../assets/C2learn ai.png";
+import sunGif from "../assets/sun.gif";
+import panda from "../assets/panda.png"
 
 const LoginPage = () => {
   return (
     <div className="login-page">
+      <img src={sunGif} alt="Sun" className="sun-gif" />
       <div className="logo-header">
   <a href="/login">
     <img src={logo} alt="C2Learn.ai Logo" className="logo-image" />
   </a>
 </div>
-
-
+<img src={panda} alt="Animal" className="panda-png" />
       <div className="login-container">
         <div className="login-card">
           <h2 className="login-title">Welcome Back!</h2>
