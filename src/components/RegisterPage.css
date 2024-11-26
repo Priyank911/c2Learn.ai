@@ -11,6 +11,16 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.sun-gif {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  width: 180px; /* Adjust the size of the sun GIF */
+  height: auto;
+  z-index: 10; /* Ensure it's above other elements */
+}
+
   .logo-header {
     position: absolute;
     top: 20px;
@@ -28,6 +38,13 @@ body {
     align-items: center;
     height: 100vh;
     background: linear-gradient(to right, #1c1e26);
+  }
+  .panda-png {
+    display: flex;
+    align-items: center;
+    right: 0; 
+    bottom: 0; 
+    width: 170px;
   }
   
   /* Register Card */
@@ -145,6 +162,20 @@ body {
   body {
     padding: 10px 0;
     background:url("bg.svg"); 
+  }
+  .sun-gif {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 80px; 
+    height: auto;
+    z-index: 10; 
+  }
+
+  .panda-png {
+    width: 80px; 
+    right: 10px; 
+    bottom: 10px; 
   }
 
   .logo {

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./RegisterPage.css";
 import logo from "../assets/C2learn ai.png"; 
+import sunGif from "../assets/sun.gif";
+import panda from "../assets/panda.png"
 
 const RegisterPage = () => {
   const [days, setDays] = useState([]);
@@ -25,12 +27,13 @@ const RegisterPage = () => {
 
   return (
     <div className="register-page">
+       <img src={sunGif} alt="Sun" className="sun-gif" />
      <div className="logo-header">
   <a href="/login">
     <img src={logo} alt="C2Learn.ai Logo" className="logo-image" />
   </a>
 </div>
-
+<img src={panda} alt="Animal" className="panda-png" />
       <div className="register-container">
         <div className="register-card">
           <h2 className="register-title">Create an account</h2>
